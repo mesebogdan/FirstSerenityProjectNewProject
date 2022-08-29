@@ -6,5 +6,7 @@ public class CartSteps extends BaseSteps{
 
     @Step
     public void addProductToCart() {
+        cartPage.clickAddToCartButton();
+
     }
 }
