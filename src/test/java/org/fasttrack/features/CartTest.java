@@ -6,7 +6,7 @@ public class CartTest extends BaseTest {
 
     @Test
     public void loginAndAddToCartTest(){
-        loginSteps.doLogin("cosmin@fasttrackit.org","123456");
+        loginSteps.doLogin("mesebogdan@yahoo.com","12345P!");
         searchSteps.navigateToProductName("SILVER DESERT NECKLACE");
         cartSteps.addProductToCart();
     }
