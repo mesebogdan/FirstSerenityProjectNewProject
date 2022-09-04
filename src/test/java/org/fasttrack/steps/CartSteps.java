@@ -9,6 +9,16 @@ public class CartSteps extends BaseSteps{
     public void addProductToCart() {
         productPage.clickAddToCart();
     }
+    @Step
+    public void addWhiteProduct(){
+        productPage.clickWhite();
+    }
+    public void addSilverProduct(){
+        productPage.clickSilver();
+    }
+    public void addMSize(){
+        productPage.clickM();
+    }
 
     @Step
     public void checkSuccessMessage(String productName){
