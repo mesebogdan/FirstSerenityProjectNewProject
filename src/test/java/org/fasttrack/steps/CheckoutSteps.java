@@ -3,6 +3,8 @@ package org.fasttrack.steps;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
+import java.util.Locale;
+
 public class CheckoutSteps extends BaseSteps{
 
     @Step
@@ -75,8 +77,8 @@ public class CheckoutSteps extends BaseSteps{
         checkoutPage.clickPlaceOrder();
     }
     @Step
-    public void verifyIfOrderIsSent(String welcometext2){
-        Assert.assertEquals("YOUR ORDER HAS BEEN RECEIVED.", checkoutPage.getWelcomeText2());
+    public void verifyIfOrderIsSent(){
+        Assert.assertEquals("THANK YOU FOR YOUR PURCHASE!", checkoutPage.getWelcomeText2());
     }
 
 }
